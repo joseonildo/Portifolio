@@ -1,6 +1,6 @@
 # Portfólio Olá, Bem vindo ao meu projeto de portfólio.
 
-![image](https://raw.githubusercontent.com/joseonildo/portifolio/main/assets/imagem-principal.png)
+![image](https://raw.githubusercontent.com/joseonildo/Portifolio/master/assets/imagem-principal.png)
 
 ## Ferramentas utilizadas:
 
