@@ -98,6 +98,20 @@ body {
     font-family: var(--fonte-secundaria)
 }
 
+.projetos-link {    
+    color: var(--cor-terciaria);     
+    font-size: 0.8rem;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;    
+    text-decoration: none;    
+    padding: 3px;    
+}
+
+.projetos-link:hover {
+    border: var(--cor-secundaria) solid 1px;
+    border-radius: 8px;
+}
+
 .apresentacao-conteudo-destaque {
     color: var(--cor-secundaria);
 }
