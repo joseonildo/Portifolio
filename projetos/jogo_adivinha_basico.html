@@ -2,14 +2,22 @@
 <html lang="pt-br">
 <meta charset="UTF-8">
 <title>Jogo - Adivinha o número sorteado</title>
+<link rel="stylesheet" href="/styles/style.css">
 
-<body>                      
-
-<h1> Projeto: Jogo "Adivinha"!</h1>
-
-<h2> Histórico do jogo:</h2>
-
-<script>                                // Inicio do programa em JavaScript
+<body>  
+    <header class="cabecalho">
+        <nav class="cabecalho-menu">
+            <a class="cabecalho-menu-link" href="/index.html" style="background-color: #616161;">Home</a>
+            <a class="cabecalho-menu-link" href="/projetos/projetos.html" >Projetos</a>
+        </nav>       
+    </header>                  
+    <main class="apresentacao">
+        <section class="apresentacao-conteudo">
+            <br>
+    <h1> Jogo: "Adivinhe o número sorteado"</h1><br>    
+    <h3> Histórico do jogo:</h3><br>
+    
+    <script>                                // Inicio do programa em JavaScript
 
 function pulaLinha() {                  // Função para pular linha na pagina html
     document.write("<br><br>");
@@ -80,8 +88,8 @@ while (tentativasRestantes) {                           // Laço principal que f
         else {                                          // Se errou o chute então ...
             tentativasRestantes--;                      // Subtrai as tentativas devido errar o chute.
             if (!tentativasRestantes) {                 // Se esgotou as tentativas então encerra e revela o numero secreto.
-                alert(`VOCÊ ERROU!!! ACABOU O JOGO!! \nNúmeros chutados: ${numerosChutados} \nO número secreto era: ${numeroSorteado} !`);
-                mostraNoHistorico(`VOCÊ ERROU!!! ACABOU O JOGO!! <br>Números chutados: ${numerosChutados} <br>O número secreto era: ${numeroSorteado} !`);
+                alert(`VOCÊ ERROU!!! ACABOU O JOGO!! \nQuantidade de tentativas usadas: ${numerosChutados.length} \nNúmeros chutados: ${numerosChutados} \nO número secreto era: ${numeroSorteado}`);
+                mostraNoHistorico(`VOCÊ ERROU!!! ACABOU O JOGO!! <br>Quantidade de tentativas usadas: ${numerosChutados.length} <br>Números chutados: ${numerosChutados} <br>O número secreto era: ${numeroSorteado}`);
                 jogarNovamente();                       //chama a função para oferecer a opção de jogar novamente.
             }
             else {                                      // Se não esgotou as tentativas...  
@@ -94,4 +102,9 @@ while (tentativasRestantes) {                           // Laço principal que f
 }                                                       // Fim do laço principal;
 mostraNoHistorico(`FIM DO JOGO!`)                       // Mostra mensagem de encerramento no HTML.
 </script>
+<a class="cabecalho-menu-link" href="/projetos/jogo_adivinha_basico.html" >Jogar Novamente</a>
+</main>
+<footer class="rodape">        
+    <p>Desenvolvido por José Onildo.</p>
+</footer>
 </body>
