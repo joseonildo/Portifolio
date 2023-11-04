@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="/styles/style.css">
+
+<body>  
+    <header class="cabecalho">
+        <nav class="cabecalho-menu">
+            <a class="cabecalho-menu-link" href="/index.html" style="background-color: #616161;">Home</a>
+            <a class="cabecalho-menu-link" href="/projetos/projetos.html" >Projetos</a>
+        </nav>       
+    </header>                  
+    <main class="apresentacao">
+        <section class="apresentacao-conteudo"><br>
+            <h1> Projeto: "Quando teve ou terá Copa"!</h1><br>      
+
+    <script>
+        function pulaLinha() {
+            document.write("<br>");
+        }
+
+        function mostra(conteudo) {
+            document.write(conteudo);
+            pulaLinha();
+        }
+
+        var limite;
+        var anoCopa = 1930;
+        var anoAtual = 2023;
+
+        while (limite == undefined || isNaN(limite) || limite < 1930) {
+            limite = parseInt(prompt("Entre com o ano limite: (Obs: maior que 1930)"));
+        }
+
+        while (anoCopa <= limite) {
+            if (anoCopa <= anoAtual) mostra("Teve copa em " + anoCopa);
+            else mostra("Terá copa em " + anoCopa);
+            anoCopa += 4;
+        }
+
+        mostra("<br>FIM");
+    </script><br>
+    <a class="cabecalho-menu-link" href="/projetos/app_ano_das_copas.html" >Nova lista</a>
+    </section>
+</main>
+<footer class="rodape">        
+    <p>Desenvolvido por José Onildo.</p>
+</footer>
+</body>

@@ -20,7 +20,7 @@ body {
     box-sizing: border-box;
     background: var(--cor-primaria);
     color: var(--cor-terciaria);
-    padding: 10px 0;
+    padding: 10px 20px;
 }
 
 .cabecalho {
