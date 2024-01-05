@@ -58,7 +58,8 @@ body::before {
     height: 80%;
     display: flex;
     align-items: center;
-    justify-content: space-between;    
+    justify-content: space-between; 
+    cursor: pointer;   
 }
 
 .container__botao1 {
@@ -70,6 +71,7 @@ body::before {
     font-weight: 600;
     border: none;
     margin-top: 0rem;
+    cursor: pointer;
 }
 
 .container__botao2 {
@@ -81,6 +83,7 @@ body::before {
     font-weight: 700;
     border: none;
     margin-top: 2rem;
+    cursor: pointer;
 }
 
 .container__texto {
