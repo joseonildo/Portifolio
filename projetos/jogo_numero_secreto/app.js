@@ -6,15 +6,16 @@ let botaoChutar =  document.querySelector('#chutar');                           
 let botaoNovoJogo =  document.querySelector('#novoJogo');                               // Define botão Novo Jogo 
 let campoChute =  document.querySelector('#campoChute');                                // Define o campo de entrada de dados
 document.getElementsByTagName("i")[0].addEventListener("click",                         // Define função do botão de ativar fala
-  function(){
-    if(ativaFala==0){      
+  function(){                                                                           // Função para ativar a fala no jogo
+    if(ativaFala==0){         
         ativaFala++;
         document.querySelector("i").style.opacity="1";
-        falarTexto('Fala ativada');        
+        falarTexto('Fala ativada');                                                     // Vocaliza "Fala ativada"
+        falarTexto('Bem vindo ao Número Secreto');                                      // Dá as boas vindas ao jogo em voz        
     }else{      
         ativaFala--;     
         document.querySelector("i").style.opacity=".5";
-        responsiveVoice.speak("Fala desativada", 'Brazilian Portuguese Female', {rate:1.2});
+        responsiveVoice.speak("Fala desativada", 'Brazilian Portuguese Female', {rate:1.2});    // Vocaliza "Fala desativada"
     }
   }
 );
@@ -166,5 +167,4 @@ function chutar() {                                                             
     }
 }
 
-falarTexto('Bem vindo ao Número Secreto');                                                 // Dá as boas vindas ao jogo em voz
 novoJogo();                                                                             // Chama a função e Inicia o jogo
